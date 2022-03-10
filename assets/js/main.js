@@ -1,6 +1,6 @@
-document.write('<p>Estadísticas centro médico Nuñoa</p>');
+document.write('<p>Estadísticas centro médico Ñuñoa</p>');
 
-var radiología = [
+var radiologia = [
     {hora: '11:00', especialista: 'IGNACIO SCHULZ', paciente: 'FRANCISCA ROJAS', rut: '9878782-1', prevision: 'FONASA'},
     {hora: '11:30', especialista: 'FEDERICO SUBERCASEAUX', paciente: 'PAMELA ESTRADA', rut: '15345241-3', prevision: 'ISAPRE'},
     {hora: '15:00', especialista: 'FERNANDO WURTHZ', paciente: 'ARMANDO LUNA', rut: '16445345-9', prevision: 'ISAPRE'},
@@ -8,7 +8,7 @@ var radiología = [
     {hora: '16:00', especialista: 'PATRICIA SUAZO', paciente: 'RAMON ULLOA', rut: '14989389-K', prevision: 'FONASA'},
 ];
 
-var traumatología = [
+var traumatologia = [
     {hora: '8:00',  especialista: 'MARIA PAZ ALTUZARRA', paciente: 'PAULA SANCHEZ',     rut: '15554774-5', prevision: 'FONASA'},
     {hora: '10:00', especialista: 'RAUL ARAYA',          paciente: 'ANGÉLICA NAVAS',    rut: '15444147-9', prevision: 'ISAPRE'},
     {hora: '10:30', especialista: 'MARIA ARRIAGADA',     paciente: 'ANA KLAPP',         rut: '17879423-9', prevision: 'ISAPRE'},
@@ -90,7 +90,7 @@ document.write("<hr>")
 
 // Ejercicio 6:Filtrar aquellos pacientes que indican ser de FONASA de Traumatología
 
-document.write(`<h2><u>Pacientes Traumatología con Fonasa</u></h2>`)
+document.write(`<h2><u>Pacientes Traumatologia con Fonasa</u></h2>`)
 
 let fonasaTraumatologia = traumatologia.filter(function(traumatologia){ //metodo filter() se usa para crear un nuevo arreglo filtrando los objetos con una función
     return traumatologia.prevision == "FONASA"; //todos los objetos que cuenten con la propiedad 'prevision' con un string "FONASA" son filtrados y agregados al nuevo arreglo
@@ -108,6 +108,6 @@ document.write(`<p>Cantidad de atenciones para Traumatología: ${traumatologia.l
 document.write(`<p>Cantidad de atenciones para Dental: ${dental.length}</p>`);
 
 
-document.write(`<p>Primera atención: ${radiologia[0].paciente} - ${radiologia[0].prevision} | Última atención: ${radiologia[radiologia.length -1].paciente} - ${radiologia[radiologia.length -1].prevision}.</p>`);
-document.write(`<p>Primera atención: ${traumatologia[0].paciente} - ${traumatologia[0].prevision} | Última atención: ${traumatologia[traumatologia.length -1].paciente} - ${traumatologia[traumatologia.length -1].prevision}.</p>`);
-document.write(`<p>Primera atención: ${dental[0].paciente} - ${dental[0].prevision} | Última atención: ${dental[dental.length -1].paciente} - ${dental[dental.length -1].prevision}.</p>`);
+document.write(`<p>Primera atencion: ${radiologia[0].paciente} - ${radiologia[0].prevision} | Última atención: ${radiologia[radiologia.length -1].paciente} - ${radiologia[radiologia.length -1].prevision}.</p>`);
+document.write(`<p>Primera atencion: ${traumatologia[0].paciente} - ${traumatologia[0].prevision} | Última atención: ${traumatologia[traumatologia.length -1].paciente} - ${traumatologia[traumatologia.length -1].prevision}.</p>`);
+document.write(`<p>Primera atencion: ${dental[0].paciente} - ${dental[0].prevision} | Última atención: ${dental[dental.length -1].paciente} - ${dental[dental.length -1].prevision}.</p>`);
