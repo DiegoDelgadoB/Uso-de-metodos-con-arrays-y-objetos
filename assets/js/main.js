@@ -1,4 +1,4 @@
-document.write('<p>Estadisticas centro medico ñuñoa</p>');
+document.write('<p>Estadísticas centro médico Nuñoa</p>');
 
 var radiologia = [
     {hora: '11:00', especialista: 'IGNACIO SCHULZ', paciente: 'FRANCISCA ROJAS', rut: '9878782-1', prevision: 'FONASA'},
